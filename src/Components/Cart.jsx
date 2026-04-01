@@ -9,11 +9,14 @@ const Cart = ({card,countCard,setCountCard}) => {
            setCountCard(updatedCard);
   }
 
+ 
+
   return (
         
-    <div className=' flex justify-between items-center  bg-gray-300 p-4 rounded-2xl my-10 '>
+    <div >
 
-               <div className='flex justify-center items-center text-center space-y-4 py-10'>
+              <div className='flex justify-between items-center  bg-gray-300 p-4 rounded-2xl my-4'>
+                 <div className='flex justify-center items-center text-center space-y-4 py-10'>
 
                 <div className=' mx-auto my-4 mr-4 '>
                   <h1 className='text-center text-3xl ' > {card.icon} </h1>
@@ -29,7 +32,12 @@ const Cart = ({card,countCard,setCountCard}) => {
             <div>
               <button onClick={removeHadleBtn}><Trash></Trash></button>
             </div>
+              </div>
+
+                 
     </div>
+       
+       
 
   );
 };

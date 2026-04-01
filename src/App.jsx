@@ -42,7 +42,8 @@ const [countCard, setCountCard] = useState([])
     <Suspense fallback = {<span className="loading loading-ring loading-sm"></span>} >
               <Cards cardPromise = {cardPromise} countCard={countCard} setCountCard={setCountCard} handleCards={handleCards} ></Cards>
     </Suspense>
-
+   
+    
     
 
 

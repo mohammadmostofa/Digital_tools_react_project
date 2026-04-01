@@ -1,6 +1,7 @@
 import React from 'react';
 import Feature from './Feature';
 import Cart from '../Cart';
+import { Check } from 'lucide-react';
 
 const Card = ({card,handleCards,countCard}) => {
    const singleCard = card
@@ -38,7 +39,7 @@ const Card = ({card,handleCards,countCard}) => {
                               ${isAlreadyAddCard? 'bg-gradient-to-r from-[#006278] to-[#016ea0]':'bg-gradient-to-r from-[#7260fa] to-[#8906ed]' }
                      `}> 
                         
-                        {isAlreadyAddCard? 'Add to Card' : singleCard.button }
+                        {isAlreadyAddCard?  <div className='flex justify-center items-center'><Check /> Add to Card</div> : singleCard.button }
 
                       </button>
                   } 

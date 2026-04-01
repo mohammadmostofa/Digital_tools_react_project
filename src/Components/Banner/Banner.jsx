@@ -40,9 +40,11 @@ const Banner = () => {
 
      {/* count number  */}
 
-     <div className='container grid grid-cols-1  bg-violet-800 mx-auto md:flex justify-evenly items-center  my-20 py-10'>
+     <div className='container mx-auto'>
 
-             <div className='flex flex-col justify-center items-center space-y-4'>
+             <div className='container mx-auto grid grid-cols-1 space-x-4  md:grid-cols-2 lg:grid-cols-3  bg-violet-800 justify-evenly items-center my-10 py-10'>
+
+                        <div className='flex flex-col justify-center items-center space-y-4'>
                      <h3 className='font-bold text-4xl text-white   '> 50k+ </h3>
                       <p className='text-green-50 text-xl font-light'>Active Users</p>
              </div>
@@ -59,6 +61,8 @@ const Banner = () => {
              <div className='flex flex-col justify-center items-center space-y-4'>
                      <h3 className='font-bold text-4xl text-white   '>4.9</h3>
                       <p className='text-green-50 text-xl font-light'>Rating</p>
+             </div>
+
              </div>
 
             

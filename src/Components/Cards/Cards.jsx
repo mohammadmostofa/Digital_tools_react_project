@@ -1,7 +1,8 @@
-import React, { use, useState, } from 'react';
+import React, { Suspense, use, useState, } from 'react';
 import Card from './Card';
 import Cart from '../Cart';
 import { ShoppingCart } from 'lucide-react';
+import RemoveAll from '../RemoveAll';
 
 const Cards = ({cardPromise,countCard,handleCards,setCountCard}) => {
 
@@ -9,11 +10,11 @@ const Cards = ({cardPromise,countCard,handleCards,setCountCard}) => {
 
   const [selectedType, setSelectedType] = useState('Products')
 
-  // hemovehandle
+  // delete all card
 
-   const removeHadleBtn = () =>{
-           countCard.fillter(items => items.id !== allCards.id)
-           setCountCard(removeHadleBtn);
+  const removeAll = () =>{
+     const remove = ([]);
+     setCountCard(remove)
   }
 
   
@@ -32,7 +33,7 @@ const Cards = ({cardPromise,countCard,handleCards,setCountCard}) => {
                      {/* action btn */}
                <div className='flex justify-center items-center space-x-4 py-5 '>
 
-                       <div className='border bg-white  rounded-full border-gray-200 flex justify-end items-center space-x-2 '>
+                       <div className='border bg-white  rounded-full border-gray-200 shadow flex justify-end items-center space-x-2 '>
 
                        <button onClick={ () => {setSelectedType('Products')}} 
                         className = {`btn ${selectedType === 'Products' ? 'bg-gradient-to-r from-[#7260fa] to-[#8906ed] text-white' : 'bg-white text-black' }
@@ -83,6 +84,18 @@ const Cards = ({cardPromise,countCard,handleCards,setCountCard}) => {
   
 
            </div>
+
+
+
+           
+
+            
+                    {
+                              allCards.length > 0  &&  <RemoveAll removeAll={removeAll}></RemoveAll>
+
+                    }
+               
+          
 
 
            
