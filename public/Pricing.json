@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Starter",
+    "description": "Perfect for getting started",
+    "price": "$0/month",
+    "isPopular": false,
+    "features": [
+      "Basic access",
+      "Limited templates",
+      "Email support"
+    ],
+    "buttonText": "Start Free Trial"
+  },
+  {
+    "name": "Pro",
+    "description": "For growing users and professionals",
+    "price": "$9/month",
+    "isPopular": true,
+    "features": [
+      "All starter features",
+      "100+ templates",
+      "Priority support"
+    ],
+    "buttonText": "Start Pro Trial"
+  },
+  {
+    "name": "Enterprise",
+    "description": "Best for teams and businesses",
+    "price": "$29/month",
+    "isPopular": false,
+    "features": [
+      "All pro features",
+      "Team collaboration",
+      "Dedicated support"
+    ],
+    "buttonText": "Contact Sales"
+  }
+]

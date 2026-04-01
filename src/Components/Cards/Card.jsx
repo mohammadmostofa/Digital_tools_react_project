@@ -1,6 +1,5 @@
 import React from 'react';
 import Feature from './Feature';
-import Cart from '../Cart';
 import { Check } from 'lucide-react';
 
 
@@ -25,6 +24,10 @@ const Card = ({card,handleCards,countCard}) => {
                    <h2 className='text-3xl font-bold text-black'> {singleCard.name} </h2>
                    <p className='text-xl font-normal text-black'> {singleCard.description} </p>
                    <h3 className='text-black font-bold'> {singleCard.period} </h3>
+                     <h2> {singleCard.price} </h2>
+                  
+                      
+                                      
 
                    {
 
@@ -37,7 +40,7 @@ const Card = ({card,handleCards,countCard}) => {
                     <button  disabled = {isAlreadyAddCard}
                     onClick={() => handleCards(card)}
                      className= {`btn rounded-full text-white 
-                              ${isAlreadyAddCard? 'bg-gradient-to-r from-[#006278] to-[#016ea0]':'bg-gradient-to-r from-[#7260fa] to-[#8906ed]' }
+                              ${isAlreadyAddCard? 'bg-gradient-to-r from-[#006278] to-[#016ea0]':'bg-gradient-to-r from-[#7260fa] to-[#8906ed]bg-gradient-to-r from-[#7260fa] to-[#8906ed]' }
                      `}> 
                         
                         {isAlreadyAddCard?  <div className='flex justify-center items-center'><Check /> Add to Card</div> : singleCard.button }
@@ -48,9 +51,7 @@ const Card = ({card,handleCards,countCard}) => {
                                   
             </div>
 
-            {
-               
-            }
+          
       
     </div>
     

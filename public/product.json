@@ -14,7 +14,7 @@
     "id": 2,
     "name": "Pro Plan",
     "description": "Ideal for professionals who need advanced features.",
-    "price": 29,
+    "price":29,
     "period": "29$/month",
     "tagType": "popular",
     "features": ["100+ templates", "Priority support", "ATS optimization"],

@@ -9,6 +9,7 @@ const Cart = ({card,countCard,setCountCard}) => {
            setCountCard(updatedCard);
   }
 
+
     
 
   return (
@@ -26,10 +27,15 @@ const Cart = ({card,countCard,setCountCard}) => {
                     <h2 className='text-3xl font-bold text-black text-nowrap'> {card.name} </h2>
                    <h3 className='text-black font-bold text-nowrap'> {card.period} </h3>
                  </div>
+
                                  
+            </div>
+                 
+            <div>    
             </div>
 
             <div>
+                
               <button  onClick={removeHadleBtn}><Trash></Trash></button>
             </div>
               </div>

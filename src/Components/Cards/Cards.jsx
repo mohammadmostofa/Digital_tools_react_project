@@ -9,20 +9,17 @@ const Cards = ({cardPromise,countCard,handleCards,setCountCard}) => {
   const allCards = use(cardPromise)
 
   const [selectedType, setSelectedType] = useState('Products')
+  
 
-  // delete all card
+  // price count
 
 
 
   
   return (
 
-    
-    
-
     <>
-
-               
+        
 
      <main className='container mx-auto'>
 
@@ -87,7 +84,7 @@ const Cards = ({cardPromise,countCard,handleCards,setCountCard}) => {
                          <div className='hidden'><RemoveAll countCard={countCard} setCountCard={setCountCard} ></RemoveAll></div>
 
 
-                     }
+                     }       
 
                
           
