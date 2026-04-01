@@ -11,7 +11,7 @@ import Footer from './assets/Footer/Footer'
 // pricing fetch
 
  const fetchPricing = async () => {
-    const res = await fetch('/Pricing.json')
+    const res = await fetch('./Pricing.json')
     return res.json()
  }
 
@@ -23,7 +23,7 @@ const fetchPricingPromise = fetchPricing()
 // card 
 
 const fetchCard = async () => {
-  const res = await fetch('/product.json')
+  const res = await fetch('./product.json')
   return res.json()
 }
 
