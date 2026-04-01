@@ -43,9 +43,9 @@ import React from 'react';
                   <div >
                           <h4  className='font-bold text-2xl text-white '  >Social Links</h4>
                           <div className='flex items-center py-4'>
-                                <img src="/src/assets/images/Facebook.png" alt="" />
-                                <img src="/src/assets/images/fi_5968958.png" alt="" />
-                                <img src="/src/assets/images/Instagram.png" alt="" />
+                                <img src="./Facebook.png" alt="" />
+                                <img src=".fi_5968958.png" alt="" />
+                                <img src=".Instagram.png" alt="" />
                           </div>
                           
                     
