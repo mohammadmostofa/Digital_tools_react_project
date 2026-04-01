@@ -3,6 +3,7 @@ import Feature from './Feature';
 import Cart from '../Cart';
 import { Check } from 'lucide-react';
 
+
 const Card = ({card,handleCards,countCard}) => {
    const singleCard = card
       

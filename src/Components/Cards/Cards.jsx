@@ -12,16 +12,17 @@ const Cards = ({cardPromise,countCard,handleCards,setCountCard}) => {
 
   // delete all card
 
-  const removeAll = () =>{
-     const remove = ([]);
-     setCountCard(remove)
-  }
+
 
   
   return (
+
+    
     
 
     <>
+
+               
 
      <main className='container mx-auto'>
 
@@ -56,7 +57,7 @@ const Cards = ({cardPromise,countCard,handleCards,setCountCard}) => {
                  selectedType === 'Products' ?
                   
                  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-3 gap-4'>
-                  {allCards.map(card => <Card key={card.id} card={card} handleCards={handleCards} countCard={countCard} ></Card>)}</div>:
+                  {allCards.map(card => <Card key={card.id} card={card} handleCards={handleCards} countCard={countCard}  ></Card>)}</div>:
 
                   
               
@@ -65,6 +66,7 @@ const Cards = ({cardPromise,countCard,handleCards,setCountCard}) => {
                     {countCard.map((card,idx) => <Cart key={idx} card={card} countCard={countCard}  setCountCard={setCountCard} ></Cart> )} </div> : 
                       
                      <div className='container mx-auto bg-[rgba(255,255,255,0.94)]  my-10 border rounded-sm border-gray-300 shadow-accent-content p-4 '>
+
 
                                <div className=' flex  py-3'> <h2 className='text-black font-bold text-3xl'>Your Cart</h2></div>   
                             
@@ -79,6 +81,14 @@ const Cards = ({cardPromise,countCard,handleCards,setCountCard}) => {
               
             }
 
+                     {
+
+                      selectedType !== 'Products' ?<div><RemoveAll countCard={countCard} setCountCard={setCountCard} ></RemoveAll></div>:
+                         <div className='hidden'><RemoveAll countCard={countCard} setCountCard={setCountCard} ></RemoveAll></div>
+
+
+                     }
+
                
           
   
@@ -87,21 +97,7 @@ const Cards = ({cardPromise,countCard,handleCards,setCountCard}) => {
 
 
 
-           
-
-            
-                    {
-                              allCards.length > 0  &&  <RemoveAll removeAll={removeAll}></RemoveAll>
-
-                    }
-               
-          
-
-
-           
-          
-
-
+        
 
      </main>
 

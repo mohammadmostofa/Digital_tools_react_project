@@ -9,7 +9,7 @@ const Cart = ({card,countCard,setCountCard}) => {
            setCountCard(updatedCard);
   }
 
- 
+    
 
   return (
         
@@ -30,12 +30,19 @@ const Cart = ({card,countCard,setCountCard}) => {
             </div>
 
             <div>
-              <button onClick={removeHadleBtn}><Trash></Trash></button>
+              <button  onClick={removeHadleBtn}><Trash></Trash></button>
             </div>
               </div>
 
+
+              
+
                  
     </div>
+
+
+
+
        
        
 

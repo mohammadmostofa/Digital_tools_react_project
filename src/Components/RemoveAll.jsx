@@ -1,12 +1,26 @@
 import React from 'react';
 
-const RemoveAll = ({removeAll}) => {
+const RemoveAll = ({ countCard,setCountCard}) => {
+
+    const removeAll = () => {
+        
+     const remove = ([]);
+       setCountCard(remove);
+  }
+
 
 
   return (
-    <div className='flex justify-center items-center'>
-             <button onClick={()=> removeAll()} className='btn btn-primary w-full'>  process to checkout </button>
+    <div className='my-4'>
+            
+            {
+              countCard.length !== 0  ?  <button onClick={()=> removeAll ()} className='btn btn-primary w-full'>process to checkout</button>:<button disabled className='hidden' >remove</button>      
+ 
+            }
+        
     </div>
+
+        
   );
 };
 
