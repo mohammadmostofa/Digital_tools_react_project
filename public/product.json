@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Plan",
+    "description": "Perfect for beginners who want to get started quickly.",
+    "price": 9,
+    "period": "9$/month",
+    "tagType": "new",
+    "features": ["10+ templates", "Basic support", "Export to PDF"],
+    "icon": "📦",
+    "button": "Buy Now"
+  },
+  {
+    "id": 2,
+    "name": "Pro Plan",
+    "description": "Ideal for professionals who need advanced features.",
+    "price": 29,
+    "period": "29$/month",
+    "tagType": "popular",
+    "features": ["100+ templates", "Priority support", "ATS optimization"],
+    "icon": "🚀",
+    "button": "Buy Now"
+  },
+  {
+    "id": 3,
+    "name": "Enterprise Plan",
+    "description": "Best for teams and large-scale usage.",
+    "price": 99,
+    "period": "99$/year",
+    "tagType": "best seller",
+    "features": ["Unlimited templates", "Team collaboration", "Analytics"],
+    "icon": "🏢",
+    "button": "Buy Now"
+  },
+  {
+    "id": 4,
+    "name": "Student Plan",
+    "description": "Affordable plan for students.",
+    "price": 5,
+    "period": "5$/month",
+    "tagType": "popular",
+    "features": ["20+ templates", "Basic customization", "Email support"],
+    "icon": "🎓",
+    "button": "Buy Now"
+  },
+  {
+    "id": 5,
+    "name": "Freelancer Pack",
+    "description": "Perfect for freelancers to showcase work.",
+    "price": 19,
+    "period": "19$/month",
+    "tagType": "best seller",
+    "features": ["Portfolio templates", "Client export", "Custom sections"],
+    "icon": "💼",
+    "button": "Buy Now"
+  },
+  {
+    "id": 6,
+    "name": "Resume Kit",
+    "description": "One-time premium resume package.",
+    "price": 49,
+    "period": "49$/one-time",
+    "tagType": "new",
+    "features": ["50+ templates", "Lifetime access", "Editable formats"],
+    "icon": "📄",
+    "button": "Buy Now"
+  },
+  {
+    "id": 7,
+    "name": "Business Plan",
+    "description": "For small businesses and startups.",
+    "price": 59,
+    "period": "59$/month",
+    "tagType": "popular",
+    "features": ["Branding tools", "Team access", "Reports"],
+    "icon": "📊",
+    "button": "Buy Now"
+  },
+  {
+    "id": 8,
+    "name": "Premium Plus",
+    "description": "All-in-one premium features unlocked.",
+    "price": 79,
+    "period": "79$/month",
+    "tagType": "best seller",
+    "features": ["All templates", "24/7 support", "Advanced tools"],
+    "icon": "⭐",
+    "button": "Buy Now"
+  },
+  {
+    "id": 9,
+    "name": "Designer Pack",
+    "description": "Creative templates for designers.",
+    "price": 39,
+    "period": "39$/month",
+    "tagType": "new",
+    "features": ["Creative layouts", "High-quality export", "Custom fonts"],
+    "icon": "🎨",
+    "button": "Buy Now"
+  },
+  {
+    "id": 10,
+    "name": "Ultimate Bundle",
+    "description": "Everything you need in one bundle.",
+    "price": 129,
+    "period": "129$/year",
+    "tagType": "best seller",
+    "features": ["Unlimited access", "All features", "Priority service"],
+    "icon": "🔥",
+    "button": "Buy Now"
+  }
+]

@@ -6,7 +6,7 @@ const Navbar_ul = () => {
     
    
    {/* small device */}
-    <ul className='grid absolute md:hidden top-15 left-0 justify-center items-center'>
+    <ul className='container grid absolute hidden top-15 -left-2 justify-start  items-center'>
 
            <li className='list-none  px-6 py-3 md:my-2' ><a className='' href="/product">Products</a></li>
            <li className='list-none  px-6 py-3 md:my-2' ><a className='' href="/product">Features</a></li>

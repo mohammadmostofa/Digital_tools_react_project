@@ -1,0 +1,33 @@
+import React from 'react';
+import Feature from './Cards/Feature';
+import { Trash } from 'lucide-react';
+
+const Cart = ({card}) => {
+  
+console.log(card, 'card')
+  return (
+    
+    <div className=' flex justify-between items-center  bg-gray-300 p-4 rounded-2xl my-10 '>
+
+               <div className='flex justify-center items-center text-center space-y-4 py-10'>
+
+                <div className=' mx-auto my-4 mr-4 '>
+                  <h1 className='text-center text-3xl ' > {card.icon} </h1>
+                  </div>
+               
+                 <div className='flex flex-col justify-center items-center space-y-2'>
+                    <h2 className='text-3xl font-bold text-black text-nowrap'> {card.name} </h2>
+                   <h3 className='text-black font-bold text-nowrap'> {card.period} </h3>
+                 </div>
+                                 
+            </div>
+
+            <div>
+              <Trash></Trash>
+            </div>
+    </div>
+
+  );
+};
+
+export default Cart;
