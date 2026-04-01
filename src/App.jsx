@@ -6,6 +6,7 @@ import Cards from './Components/Cards/Cards'
 import Navbar from './Components/Navbar/Navbar'
 import Information from './assets/Information/Information'
 import Pricing from './assets/Pricing/Pricing'
+import Footer from './assets/Footer/Footer'
 
 // pricing fetch
 
@@ -67,11 +68,11 @@ const [countCard, setCountCard] = useState([])
     </Suspense>
 
     
-
+   <Footer ></Footer>
 
 
     </>
   )
 }
 
-export default App
+export default App;
