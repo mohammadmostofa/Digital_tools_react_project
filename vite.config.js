@@ -1,16 +1,8 @@
 import { defineConfig } from 'vite'
-import react, { reactCompilerPreset } from '@vitejs/plugin-react'
-import babel from '@rolldown/plugin-babel'
+import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-
-// https://vite.dev/config/
 export default defineConfig({
-  base:'/https://github.com/mohammadmostofa/Digital_tools_react_project/',
-  plugins: [
-    react(),
-   tailwindcss(),
-
-    babel({ presets: [reactCompilerPreset()] })
-  ],
+  plugins: [react(), tailwindcss()],
+  base: '/Digital_tools_react_project/', // এই লাইনটি ৪-০-৪ এরর দূর করবে
 })
