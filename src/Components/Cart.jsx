@@ -2,11 +2,15 @@ import React from 'react';
 import Feature from './Cards/Feature';
 import { Trash } from 'lucide-react';
 
-const Cart = ({card}) => {
-  
-console.log(card, 'card')
+const Cart = ({card,countCard,setCountCard}) => {
+
+  const removeHadleBtn = () =>{
+       const updatedCard =  countCard.filter(items => items.id !== card.id);
+           setCountCard(updatedCard);
+  }
+
   return (
-    
+        
     <div className=' flex justify-between items-center  bg-gray-300 p-4 rounded-2xl my-10 '>
 
                <div className='flex justify-center items-center text-center space-y-4 py-10'>
@@ -23,7 +27,7 @@ console.log(card, 'card')
             </div>
 
             <div>
-              <Trash></Trash>
+              <button onClick={removeHadleBtn}><Trash></Trash></button>
             </div>
     </div>
 

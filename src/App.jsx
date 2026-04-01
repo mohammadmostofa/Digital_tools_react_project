@@ -36,7 +36,7 @@ const [countCard, setCountCard] = useState([])
     
     <>
         
-        <Navbar countCard={countCard} ></Navbar>
+        <Navbar countCard={countCard}  ></Navbar>
         <Banner></Banner>
     
     <Suspense fallback = {<span className="loading loading-ring loading-sm"></span>} >

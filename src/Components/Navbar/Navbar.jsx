@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar_ul from './Navbar_ul';
 
 
-const Navbar = ({countCard}) => {
+const Navbar = ({countCard,}) => {
   return (
   
     <>
