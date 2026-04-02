@@ -85,8 +85,10 @@ const Cards = ({cardPromise,countCard,handleCards,setCountCard}) => {
 
 
                      }       
+                    
 
-               
+                    
+                
           
   
 

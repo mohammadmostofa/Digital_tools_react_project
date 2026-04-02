@@ -1,6 +1,5 @@
 import { Circle, Play } from 'lucide-react';
 import React from 'react';
-
 const Banner = () => {
      
 
@@ -32,7 +31,7 @@ const Banner = () => {
 
 
                  <div className='flex justify-center items-center'>
-                        <img src="./banner.png" alt="" className='mx-auto' />
+                        <img src= 'banner.png' alt="" className='mx-auto' />
                  </div>
 
      </div>
